@@ -8,6 +8,8 @@ public class App {
         singlyLinkedList.insertFirst(99);
         singlyLinkedList.insertFirst(88);
         singlyLinkedList.insertLast(1000);
+        singlyLinkedList.deleteFirst();
+        singlyLinkedList.deleteFirst();
         singlyLinkedList.displayList();
     }
 }
