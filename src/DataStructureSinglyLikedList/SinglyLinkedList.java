@@ -5,6 +5,7 @@ public class SinglyLinkedList {
 
     public SinglyLinkedList() {
 
+
     }
 
     public boolean isEmpty() {
@@ -36,6 +37,18 @@ public class SinglyLinkedList {
             current = current.next;
         }
         System.out.println();
+    }
+
+    public void insertLast(int data) {
+        var current = first;
+        while (current.next != null) {
+            current = current.next;
+
+        }
+        var node = new Node();
+        node.data = data;
+        current.next = node;
+
     }
 
 }
