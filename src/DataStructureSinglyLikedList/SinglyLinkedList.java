@@ -29,16 +29,6 @@ public class SinglyLinkedList {
 
     }
 
-    public void displayList() {
-        System.out.println("List from first to last ");
-        var current = first;
-        while (current != null) {
-            current.displayNode();
-            current = current.next;
-        }
-        System.out.println();
-    }
-
     public void insertLast(int data) {
         var current = first;
         while (current.next != null) {
@@ -50,6 +40,17 @@ public class SinglyLinkedList {
         current.next = node;
 
     }
+
+    public void displayList() {
+        System.out.println("List from first to last ");
+        var current = first;
+        while (current != null) {
+            current.displayNode();
+            current = current.next;
+        }
+        System.out.println();
+    }
+
 
 }
 
